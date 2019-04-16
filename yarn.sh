@@ -1,9 +1,7 @@
 #!/usr/bin/env bash
 
-git clone --depth=1 --branch=master https://github.com/DannyHinshaw/typescript-redux-setup.git
+bash <(curl -s https://raw.githubusercontent.com/DannyHinshaw/typescript-redux-setup/master/base.sh)
 
-rm -rf ./dirformynewrepo/.git
-
+# Install project dependencies
 yarn add redux react-redux redux-logger redux-devtools-extension redux-persist redux-thunk typesafe-actions
-
 yarn add --dev @types/redux @types/react-redux

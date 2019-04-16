@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
-bash <(curl -s https://raw.githubusercontent.com/DannyHinshaw/typescript-redux-setup/master/base.sh)
+git clone --depth=1 --branch=master https://github.com/DannyHinshaw/typescript-redux-setup.git
+
+rm -rf ./dirformynewrepo/.git
 
 npm i --save redux react-redux redux-logger redux-devtools-extension redux-persist redux-thunk typesafe-actions
 

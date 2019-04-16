@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-source base.sh
+source ./base.sh
 
 npm i --save redux react-redux redux-logger redux-devtools-extension redux-persist redux-thunk typesafe-actions
 

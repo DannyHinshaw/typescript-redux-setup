@@ -19,6 +19,6 @@ export interface IExampleAction extends IActionBase {
 /*      Example
  ======================= */
 
-export const exampleSet = (payload: IExampleState): IExampleAction =>
+export const exampleSet = (payload: string): IExampleAction =>
 	action(actionTypes.EXAMPLE_SET, payload);
 

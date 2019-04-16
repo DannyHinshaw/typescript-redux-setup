@@ -8,12 +8,12 @@ Installs all needed dependencies and gets a basic redux store setup in you proje
 
 **yarn**
 ```bash
-bash <(curl -s https://www.github.com/DannyHinshaw/typescript-redux-setup/yarn.sh)
+bash <(curl -s https://raw.githubusercontent.com/DannyHinshaw/typescript-redux-setup/master/yarn.sh)
 ```
 
 **npm**
 ```bash
-bash <(curl -s https://www.github.com/DannyHinshaw/typescript-redux-setup/npm.sh)
+bash <(curl -s https://raw.githubusercontent.com/DannyHinshaw/typescript-redux-setup/master/npm.sh)
 ```
 
 Then add the store and persistor to app initialization. Example:

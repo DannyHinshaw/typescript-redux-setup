@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-# git clone --depth=1 --branch=master git://someserver/somerepo dirformynewrepo
-# rm -rf ./dirformynewrepo/.git
+git clone --depth=1 --branch=master https://github.com/DannyHinshaw/typescript-redux-setup.git
+rm -rf ./dirformynewrepo/.git
 

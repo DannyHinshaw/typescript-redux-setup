@@ -1,6 +1,6 @@
 # typescript-redux-setup
 
-Installs all needed dependencies and gets a basic redux store setup in you project.
+Installs all needed dependencies and gets a basic redux store setup in your React project.
 
 ## Install
 

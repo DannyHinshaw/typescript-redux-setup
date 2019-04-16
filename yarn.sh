@@ -6,4 +6,4 @@ bash <(curl -s https://raw.githubusercontent.com/DannyHinshaw/typescript-redux-s
 # Install project dependencies
 echo "Installing npm packages..."
 yarn add redux react-redux redux-logger redux-devtools-extension redux-persist redux-thunk typesafe-actions
-yarn add --dev @types/redux @types/react-redux
+yarn add --dev @types/react-redux

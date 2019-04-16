@@ -3,17 +3,22 @@
 Installs all needed dependencies and gets a basic redux store setup in you project.
 
 ## Install
-Wherever you want your `store` directory run:
 
+`cd` in to wherever you want your `store` directory and run:
+
+**yarn**
 ```bash
-bash <(curl -s https://www.github.com/DannyHinshaw/typescript-redux-setup)
+bash <(curl -s https://www.github.com/DannyHinshaw/typescript-redux-setup/yarn.sh)
 ```
 
-Then add the store and persistor to app initialization.
+**npm**
+```bash
+bash <(curl -s https://www.github.com/DannyHinshaw/typescript-redux-setup/npm.sh)
+```
 
-Example:
+Then add the store and persistor to app initialization. Example:
 
-`index.tsx`
+**index.tsx**
 
 ```typescript jsx
 import App from "./App";
@@ -25,11 +30,11 @@ import { PersistGate } from "redux-persist/integration/react";
 
 
 ReactDOM.render((
-	<Provider store={store}>
-		<PersistGate loading={null} persistor={persistor}>
-		    <App />
-		</PersistGate>
-	</Provider>
+  <Provider store={store}>
+    <PersistGate loading={null} persistor={persistor}>
+      <App />
+    </PersistGate>
+  </Provider>
 ), document.getElementById("index"));
 
 ```

@@ -1,4 +1,3 @@
-import { IExampleState } from "../reducers/exampleReducer";
 import { action } from "typesafe-actions";
 import * as actionTypes from "./types";
 

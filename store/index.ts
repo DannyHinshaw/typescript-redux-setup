@@ -5,7 +5,6 @@ import { persistReducer, persistStore } from "redux-persist";
 import { PersistConfig } from "redux-persist/es/types";
 import storageSession from "redux-persist/lib/storage";
 import reduxThunk from "redux-thunk";
-import { IActionBase } from "./actions";
 import exampleReducer from "./reducers/exampleReducer";
 
 
@@ -15,20 +14,6 @@ const persistConfig: PersistConfig = {
 	storage: storageSession,
 	blacklist: []
 };
-
-/**
- * Util function for creating reducers.
- * @param initialState
- * @param handlers
- * @returns {(state: any, action: any) => any}
- */
-export function createReducer(initialState: any, handlers: any) {
-	return (state: any = initialState, action: IActionBase) => {
-		return handlers.hasOwnProperty(action.type)
-			? handlers[action.type](state, action)
-			: state;
-	};
-}
 
 /**
  * ===== REGISTER REDUCERS HERE ===== *

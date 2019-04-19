@@ -1,13 +1,13 @@
 import { IExampleAction } from "../actions";
 import { EXAMPLE_SET } from "../actions/types";
-import { createReducer } from "../index";
+import { createReducer } from "../util";
 
 export interface IExampleState {
 	example: string
 }
 
 export const initialExampleState: IExampleState = {
-	example: "example",
+	example: "example"
 };
 
 
@@ -20,6 +20,6 @@ const exampleSetReducer = (state: IExampleState, action: IExampleAction): IExamp
  * Main reducer mapping.
  */
 export default createReducer(initialExampleState, {
-	[EXAMPLE_SET]: exampleSetReducer,
+	[EXAMPLE_SET]: exampleSetReducer
 });
 

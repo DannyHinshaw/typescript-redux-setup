@@ -9,7 +9,7 @@ import exampleReducer from "./reducers/exampleReducer";
 
 
 // Persist store to session storage for refresh
-const persistConfig: PersistConfig = {
+const persistConfig: PersistConfig<any> = {
 	key: "root",
 	storage: storageSession,
 	blacklist: []
